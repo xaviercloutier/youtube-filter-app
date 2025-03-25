@@ -1,0 +1,13 @@
+# This file contains the configuration for Vercel deployment
+# https://vercel.com/docs/projects/project-configuration
+
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "env": {
+    "YOUTUBE_API_KEY": "REPLACE_WITH_YOUR_YOUTUBE_API_KEY"
+  }
+}

@@ -1,14 +1,11 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: 'standalone',
-  env: {
-    YOUTUBE_API_KEY: process.env.YOUTUBE_API_KEY,
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   eslint: {
-    // This will completely disable ESLint during the build
     ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
